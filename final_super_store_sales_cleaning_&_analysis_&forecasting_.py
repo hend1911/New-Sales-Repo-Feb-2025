@@ -235,29 +235,6 @@ files.download('location_table.csv')  # Changed 'LOCATION_table.csv' to 'locatio
 
 print("تم تنزيل الملفات!")
 
-"""## **TASK2-ANALYSIS OF DATA**
-
-## خطوات دمج **الجداول** للتوضيح فقط
-✅## ## تحديد المفاتيح الأساسية والعلاقات:
-
-## orders: مفتاحه الأساسي هو Order ID.
-## products: مفتاحه الأساسي هو Product ID.
-## customers: مفتاحه الأساسي هو Customer ID.
-## regions: مفتاحه الأساسي هو postal_code.
-
-##import pandas as pd
-
-# دمج جدول الطلبات مع العملاء
-orders_customers = pd.merge(orders_table, customers_table, on='Customer ID', how='left')
-
-# دمج الناتج مع جدول المنتجات
-orders_customers_products = pd.merge(orders_customers, products_table, on='Product ID', how='left')
-
-# دمج الناتج مع جدول الموقع
-final_data = pd.merge(orders_customers_products, regions_table, on='postal_code', how='left')
-
-# عرض بعض الصفوف للتأكد
-print(final_data.head())
 
 ## **2-1 Describtive Overall Finacial Analysis**
 """
